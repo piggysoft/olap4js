@@ -15,14 +15,6 @@
 		olapXmla = global.olapXmla = {};
 	}
 
-	/** olapXmla.Connection
-	 * Provides Xmla specific implementation for Xmla specific connections
-	* @class olapXmla.Connection
-	* @constructor
-	* @param
-	* @extends olap.Connection
-	*   @param {Object} source JS object representing object properties.  Often used to rehydrate objects after external persistence
-	*/
     olapXmla.Connection = function XmlaConnection($connection){
 	if (!window.location.origin) window.location.origin = window.location.protocol+"//"+window.location.host;	
 	var conn = $connection || {};
